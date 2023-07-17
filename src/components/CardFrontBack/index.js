@@ -1,7 +1,7 @@
 import CardGame from "../CardGame";
 import './style.css';
 
-function CardFrontBack() {
+function CardFrontBack(icon, altIcon) {
     /*Criando uma função para click, que funcione apenas com o CardFrontBack: */
     window.cardFrontBack = {}
     window.cardFrontBack.handleClick = (event) => {
@@ -25,7 +25,7 @@ function CardFrontBack() {
                 ${CardGame()}
             </div>
             <div class="card -back">
-                ${CardGame("panda-dance-removebg", "panda dançando")}
+                ${CardGame(icon, altIcon)}
             </div>
         </article>
     `
